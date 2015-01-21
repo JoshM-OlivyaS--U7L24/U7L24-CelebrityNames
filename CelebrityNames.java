@@ -30,8 +30,10 @@ public class CelebrityNames
         { 
             Scanner sc = new Scanner( text[j] );
             String firstName = sc.next( );
-            String lastName = sc.next( );
-            reversedName[j] = lastName + ", " + firstName;
+            String middleName = sc.next( );
+            String lastName = sc.next();
+            String bDay = sc.next();
+            reversedName[j] = lastName + ", " + firstName + " " + middleName + " -- " + bDay;
         } 
         
         Arrays.sort(reversedName);
